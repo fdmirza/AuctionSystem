@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider_color"
+    android:orientation="horizontal"
+    android:paddingBottom="1dp" >
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="name"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:id="@+id/tv_bid_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="value"
+        android:textColor="@color/black_text_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

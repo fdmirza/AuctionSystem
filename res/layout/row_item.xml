@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_card"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:padding="5dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#BFFFFFFF"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/frameLayout1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Laptop"
+                android:textColor="@color/app_text_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_eventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_eventName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Ends: 22:00" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/divider_color"
+                android:padding="3dp" >
+
+                <ImageView
+                    android:id="@+id/iv_map"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/iv_sold"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sold"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_eventTime"
+                android:layout_below="@+id/tv_eventTime"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="$220"
+                android:textColor="#2A1"
+                android:textSize="26sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
